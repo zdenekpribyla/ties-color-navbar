@@ -1,0 +1,11 @@
+.ties__container {
+    color: red;
+    display: inline-block;
+}
+.tie__block {
+    width: 20px;
+    display: inline-block;
+}
+.tie__icon {
+    width: 15px;
+}
