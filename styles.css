@@ -2,10 +2,43 @@
     color: red;
     display: inline-block;
 }
+
 .tie__block {
     width: 20px;
     display: inline-block;
 }
+
 .tie__icon {
     width: 15px;
+}
+
+.price__benefit {
+    margin: 20px auto;
+    max-width: 350px;
+}
+
+.price__benefit-single {
+    display: flex;
+}
+
+.price__benefit-single__icon {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 5px;
+    float: left
+}
+
+.price__benefit-single__text {
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+    padding: 20px 0
+}
+
+.price__benefit-single__text span {
+    vertical-align: middle;
+}
+
+.price__benefit-single__img {
+    width: 50px;
 }

@@ -10,9 +10,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     tiesData.forEach(function (tie) {
-            var tieElement = ('<div class="tie__block"><a href="' + tie.link + '"><img class="tie__icon" src="' + tie.imgSrc + '"></a></div>');
+        var tieElement = ('<div class="tie__block"><a href="' + tie.link + '"><img class="tie__icon" src="' + tie.imgSrc + '"></a></div>');
 
-            tieElementTarget.insertAdjacentHTML('beforeend', tieElement);
-        });
+        tieElementTarget.insertAdjacentHTML('beforeend', tieElement);
+    });
 
+    var priceNavbarTarget = document.getElementById('price__navbar')
+    var priceElement = (
+        '<div class="price__benefit">\n' +
+        '        <div class="price__benefit-single">\n' +
+        '            <div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png"\n' +
+        '                                                          class="price__benefit-single__img"></div>\n' +
+        '            <div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div>\n' +
+        '        </div>\n' +
+        '        <div class="price__benefit-single">\n' +
+        '            <div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png"\n' +
+        '                                                          class="price__benefit-single__img"></div>\n' +
+        '            <div class="price__benefit-single__text"> dffffff ve fólii s malým věšáčkem</div>\n' +
+        '        </div>\n' +
+        '        <div class="price__benefit-single">\n' +
+        '            <div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png"\n' +
+        '                                                          class="price__benefit-single__img"></div>\n' +
+        '            <div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div>\n' +
+        '        </div>\n' +
+        '    </div>'
+    )
+    priceNavbarTarget.insertAdjacentHTML('beforeend', priceElement)
 }, false);
