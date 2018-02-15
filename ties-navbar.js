@@ -18,43 +18,46 @@ document.addEventListener('DOMContentLoaded', function () {
     function getSum(total, num) {
         return total + num;
     }
+
     function tieContainer() {
-         return '<div class="ties__navbar">' + tieElements.reduce(getSum) + '</div>';
+        return '<div class="ties__navbar"><div class="ties__container"><div class="ties__container-title">Kravaty dle barvy:</div>'
+            + tieElements.reduce(getSum) + '</div></div>';
 
     }
-    tieElementTarget.insertAdjacentHTML('beforeend', tieContainer())
+
+    tieElementTarget.insertAdjacentHTML('beforeend', tieContainer());
 
 
-        // var tieElementTarget = document.getElementById('ties-navbar');
-        //
-        // tiesData.forEach(function (tie) {
-        //     var tieElement = ('<div class="tie__block"><a href="' + tie.link + '"><img class="tie__icon" src="' + tie.imgSrc + '"></a></div>');
-        //
-        //     tieElementTarget.insertAdjacentHTML('beforeend', tieElement);
-        // });
+    //-----------------------------------------------------------------
+
+    var priceNavbarTarget = document.getElementById('price__navbar');
+    var priceElement = (
+        '<div class="price__benefit"><div class="price__benefit-single">' +
+        '<div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png" class="price__benefit-single__img">' +
+        '</div><div class="price__benefit-single__text-block">' +
+        '<div class="price__benefit-single__title"><span>TITLE</span></div><div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div> ' +
+        '</div></div><div class="price__benefit-single">' +
+        '<div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png" class="price__benefit-single__img"></div> ' +
+        '<div class="price__benefit-single__text-block"><div class="price__benefit-single__title"><span>TITLE</span></div>' +
+        '<div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div></div></div>' +
+        '<div class="price__benefit-single">' +
+        '<div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png" class="price__benefit-single__img">' +
+        '</div><div class="price__benefit-single__text-block"><div class="price__benefit-single__title"><span>TITLE</span></div> ' +
+        '<div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div>' +
+        '</div></div></div>'
+    )
+    priceNavbarTarget.insertAdjacentHTML('beforeend', priceElement);
 
 
-        // var priceNavbarTarget = document.getElementById('price__navbar')
-        // var priceElement = (
-        //     '<div class="price__benefit">\n' +
-        //     '        <div class="price__benefit-single">\n' +
-        //     '            <div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png"\n' +
-        //     '                                                          class="price__benefit-single__img"></div>\n' +
-        //     '            <div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div>\n' +
-        //     '        </div>\n' +
-        //     '        <div class="price__benefit-single">\n' +
-        //     '            <div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png"\n' +
-        //     '                                                          class="price__benefit-single__img"></div>\n' +
-        //     '            <div class="price__benefit-single__text"> dffffff ve fólii s malým věšáčkem</div>\n' +
-        //     '        </div>\n' +
-        //     '        <div class="price__benefit-single">\n' +
-        //     '            <div class="price__benefit-single__icon"><img src="http://pribyla.com/images/vesak.png"\n' +
-        //     '                                                          class="price__benefit-single__img"></div>\n' +
-        //     '            <div class="price__benefit-single__text"><span>dffffff  ve fólii s malým věšáčkem</span></div>\n' +
-        //     '        </div>\n' +
-        //     '    </div>'
-        // )
-        // priceNavbarTarget.insertAdjacentHTML('beforeend', priceElement)
+    //404 redirect
+    var targetElement = document.getElementsByClassName('404-block');
+    for (var i = 0; i < targetElement.length; i++) {
+        var whereToCheck = targetElement[i];
+        if
+        (whereToCheck.innerHTML.indexOf('cool tie') != -1) {
+            window.location.replace('https://www.vasekravaty.cz')
+        }
+    }
 
 
-    }, false);
+}, false);

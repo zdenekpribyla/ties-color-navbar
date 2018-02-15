@@ -24,6 +24,7 @@
 
 .price__benefit-single {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .price__benefit-single__icon {
@@ -33,11 +34,20 @@
     float: left
 }
 
+.price__benefit-single__text-block {
+    
+}
+
+.price__benefit-single__title {
+    padding: 0 0 5px 0;
+    border-bottom: solid 1px darkgrey;
+}
+
 .price__benefit-single__text {
     box-sizing: border-box;
     width: 75%;
     float: left;
-    padding: 20px 0
+    padding: 5px 0 0 0;
 }
 
 .price__benefit-single__text span {
@@ -46,4 +56,10 @@
 
 .price__benefit-single__img {
     width: 50px;
+}
+
+.price__benefit:after {
+    content: "";
+    display: table;
+    clear: both;
 }
